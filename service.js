@@ -1,4 +1,12 @@
 const http = require('http');
+const express = require('express');
+const cors = require('cors');
+
+const app = express();
+
+// Configurar o CORS
+app.use(cors());
+
 
 // Dados de exemplo
 let books = [
